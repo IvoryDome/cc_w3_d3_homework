@@ -30,6 +30,8 @@ class Artist
     artists = SqlRunner.run(sql)
   end
 
+  # def delete
+
   # def self.delete_all()
   #   sql = "DELETE FROM customers"
   #   SqlRunner.run(sql)

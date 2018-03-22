@@ -13,7 +13,7 @@ artist1.save()
 artist_hash2 = ({'name' => 'Eazy E'})
 artist2 = Artist.new(artist_hash2)
 artist2.save()
-p artist1
+# p artist1
 
 album_hash1 = {'title' => 'The Chronic', 'genre' => 'Rap', 'artist_id' => artist1.id}
 album1 = Album.new(album_hash1)
@@ -28,6 +28,8 @@ album2 = Album.new(album_hash1)
 album2.save()
 
 
-print album1
+p Artist.all
 
-Album.all
+p Album.all
+
+p album2.display_artist

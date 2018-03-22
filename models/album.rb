@@ -34,6 +34,16 @@ class Album
     albums = SqlRunner.run(sql)
   end
 
+  def display_artist()
+    sql = "SELECT * FROM artists
+    WHERE id = $1"
+    values = [@artist_id]
+    results = SqlRunner.run(sql, values)
+    artists_hash = results[0]
+    artist = Artist.new(artists_hash)
+    return artist
+  end
+
 
 
 
